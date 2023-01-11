@@ -1,0 +1,18 @@
+<ejs-datepicker [start]='start' (change)='onChangeSystemDate($event)' [values]="workPlanDate" [depth]='depth' [format]='format'></ejs-datepicker>
+
+public start: CalendarView = 'Year';
+public depth: CalendarView = 'Year';
+public format: string = 'MMMM y'
+
+
+Supplier Name: NANPAO    Factory Name: VN    Part No.: RVA575W    Chemical Name: A575W    Batch/Lot No.: N410833776    Production Date: 01032021    Expiry Date: 31052021    Capacity: 20    Unit: KG
+
+
+<span [ngClass]="data.CreatedBy == userid || data.Auditor == userid ? 'e-input-group e-control-wrapper e-valid-input' : 'e-input-group e-control-wrapper e-valid-input e-disabled' "  >
+    <ng-container *ngIf="data.CreatedBy == userid || data.Auditor == userid; else elseTemplate">
+       <input class="e-field e-input e-defaultcell" type="text" [value]="data.Description" name="Description" style="text-align:Center">
+    </ng-container>
+    <ng-template #elseTemplate>
+       <input class="e-field e-input e-defaultcell" disabled="disabled" type="text" [value]="data.Description" name="Description" style="text-align:Center">
+    </ng-template>
+</span>

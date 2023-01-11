@@ -1,0 +1,12 @@
+﻿run yolo:  python cam1.py --source 0 --weights yolov5m.pt  --view-img --device 0
+file cần chạy của dự án là cam1.py và cam2.py
+note: 
+ cam1.py => file python cần chạy
+--source 0 => (0) chạy với camera , thay thế số 0 bằng đường dẫn khác nếu muốn chạy với video, img
+--weight => file đã train hoặc mặc định(yolo5s.pt)
+--view-img => hiển thị hình ảnh
+--device 0 => chạy với cuda
+
+Nếu chạy lệnh run bị lỗi => là do máy chưa cài đủ library , nó báo thiếu module nào thì chạy lệnh => pip install tên module
+
+

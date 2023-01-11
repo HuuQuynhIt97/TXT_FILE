@@ -1,0 +1,137 @@
+
+var checkStatus = _repoIngredientInfo.FindAll().Where(x => x.Code == Barcode && x.BuildingName == building && x.Batch == Batch && x.CreatedDate.Date >= min.Date && x.CreatedDate.Date <= max.Date && x.Status == false).OrderBy(y => y.CreatedTime).FirstOrDefault();
+
+P@$$WORD2021
+
+this.startDate.toDateString(), this.endDate.toDateString()
+admin pass: shc@123@123
+-------------------------------------------------
+KPI-SYSTEM-API-Core : F:\0.To do list\KPI\18012020\KPI-API-NetCore3.1 - Copy
+
+KPI-SYSTEM-API-MVC5 : F:\0.ToDoList\KPI-Home-master-MultiLangKPI
+
+KPI-SYSTEM-VUEJS F:\VueDocker\demobuild; 
+
+between '2022-08-20' and '2022-08-20 23:59:59'
+
+F:\Angular\SYSTEM\Digital Mixing Room\26052021\dmrv202
+
+
+ <modules runAllManagedModulesForAllRequests="false">
+    <remove name="WebDAVModule" />
+  </modules>
+
+KPI-SYSTEM-ANGULAR : F:\Angular\KPISYSTEM_AngularV9.0.6
+sqlcmd -S 10.4.5.174 -U sa -P P@$$WORD2021 -d dmr_T -i insert.sql
+-------------------------------------------------
+C:\Windows\System32\drivers\etc
+
+MIXING-API-CORE : F:\Angular\MixingAPI\WorkManagement-api
+
+MIXING-CLIENT-VUEJS : E:\Demo2\Todo\MixingRoom\MixingRoom - Copy - Copy
+
+MIXING-CLIENT-Angular: F:\Angular\MixingRoom-Angular
+
+-------------------------------------------------
+
+LABTEAM-HOME-PAGE-API-CORE : F:\1.Todolist\LabTeamAPI\WorkManagement-api
+
+LABTEAM-HOME-PAGE-CLIENT-VUEJS : F:\1.Todolist\LTHP
+
+LABTEAM-HOME-PAGE-CLIENT-Angular: F:\Angular\LABTEAM-Angular
+
+-------------------------------------------------
+MQTT: E:\Demo MQTT
+-------------------------------------------------
+ESC-API-CORE: F:\Angular\Electronc\Electronic-Scale-API
+
+ESC-CLIENT-ANGULAR: F:\Angular\MQTT\scalingmachine\ec-angular
+
+IRS-API: F:\Angular\InkRoom\IRS
+
+IRS-ANGULAR: F:\Angular\InkRoom\IRS
+
+
+20201112-DEFAULT-8HC00380
+20201112-DEFAULT-8SD00155
+
+
+--- Query data theo date MongoDB ------
+
+{ "createddatetime": {$gt: new Date('2021-02-02')} }
+
+--- Query data theo date MongoDB ------
+
+PL-55
+20201218-DEFAULT-8HC00382
+SH-08
+20201218-DEFAULT-8SD00081
+
+Name: 311FT6
+QrCode: 20210127-DEFAULT-8HC00378
+
+Name: RFE
+QrCode: 20210127-DEFAULT-8SD00155
+
+Name: 740F6
+QrCode: 20210301-DEFAULT-8HC00380
+
+%systemroot%\system32\inetsrv\
+appcmd start site /site.name
+appcmd.exe list site
+
+
+20201106-DEFAULT-46404141
+20201106-DEFAULT-79464436
+
+<cors enabled="true">
+ <add origin="https://your-application.net" maxAge="120">
+   <allowMethods>
+     <add method="*"/>
+   </allowMethods>
+   <allowHeaders>
+     <add header="*"/>
+   </allowHeaders>
+ </add>
+</cors>
+
+
+HMAC_SHA256 Key BINANCE
+
+API Key: JC4aXBVmgj76mS7OabmKoIW68Z3WfcWluQMGg2m2LxFyf0edgiJw92Qw2XjWQn9B
+
+Secret Key: w3nk2EHsTHdF0hAEZJEUg5u9zx4Edq1cg0gWtr2G8kAGPoXWxtdEsvHSQ77Kd71s
+
+0xa7e8503d7a5d745d191f14ec20d5ec25aca548f9
+5d40251499b974345d4fd5970c174b2659983660c258ad999c6630d0513994142b
+
+Supplier Name: GRECO    Factory Name: VN    Part No.: 6004EAB(B):GRECO    Chemical Name: 6006EAB(B)    Batch/Lot No.: N410833776    Production Date: 01032021    Expiry Date: 31052021    Capacity: 20    Unit: KG
+Supplier Name: HENKEL    Factory Name: VN    Part No.: 1433221:HENKEL    Chemical Name: 232HF-2    Batch/Lot No.: N410833776    Production Date: 01032021    Expiry Date: 31052021    Capacity: 20    Unit: KG
+Supplier Name: HENKEL    Factory Name: VN    Part No.: 1924250:HENKEL    Chemical Name: ARF-2000    Batch/Lot No.: N410833776    Production Date: 01032021    Expiry Date: 31052021    Capacity: 20    Unit: KG
+We will stop the system from 1:30 to 1:40 PM this noon to deploy the official version to this address http://10.4.5.174:1005
+
+"NOTE_MIXING": "** Notice: Chemicals B,C,D,E has standard consumption > 2KG , must use big weighing scale **",
+
+"NOTE_MIXING": "** Lưu ý: Các chất B,C,D,E có tổng tiêu thụ lớn hơn 2KG , phải dùng cân lớn **",
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <location path="." inheritInChildApplications="false">
+    <system.webServer>
+      <handlers>
+        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+      </handlers>
+      <aspNetCore processPath=".\Suggession.exe" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />
+	<security>
+      <requestFiltering>
+        <!-- Measured in Bytes -->
+        <requestLimits maxAllowedContentLength="1073741824" />  <!-- 1 GB-->
+      </requestFiltering>
+    </security>
+    </system.webServer>
+	<!-- Add this section for file size... -->
+    
+  </location>
+</configuration>
+<!--ProjectGuid: d026c925-d0fc-46bc-87d7-d364a275b57f-->

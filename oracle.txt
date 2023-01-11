@@ -1,0 +1,21 @@
+"OracleConnection":"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST={url of your database})(PORT={port})))(CONNECT_DATA={name of your database for ex: SID})));User Id={user id};password={password}:"
+
+
+ORACLE INFORMATION:
+SID: orcl2
+
+user: oracle3
+pass: abc_1234
+
+user sys , system
+pass : Shc_1234
+
+Oracle Enterprise Manager Database Express URL: https://VP-C19.shc.ssbshoes.local:5500/em
+sys / as sysdba
+
+
+query oracle:
+
+var starts = start.ToString("yyyy-MM-dd HH:mm:ss:ffff");
+                var ends = end.ToString("yyyy-MM-dd HH:mm:ss:ffff");
+                string sqlQuery = @$"SELECT * FROM StirRawData Where CreatedTime >= '{starts}' AND CreatedTime <= '{ends}' AND MachineID = {machineID}";

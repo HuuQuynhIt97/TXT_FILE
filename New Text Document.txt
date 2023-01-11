@@ -1,0 +1,48 @@
+
+F:\Angular\SYSTEM\Digital Mixing Room\RPM
+
+
+SELECT *
+  FROM [SHC_KPI].[dbo].[Accounts]
+
+  select * from Actions where AccountId = 89 and KPIId=1243
+
+  select * from ActionStatus where ActionId IN (select Id from Actions where AccountId = 89 and KPIId=1243)
+
+
+  select * from Do where ActionId IN (select Id from Actions where AccountId = 89 and KPIId=1243)
+ select ac.Id, 
+ ac.Content, 
+ ac.Deadline, 
+ act.Id, 
+ act.ActionId, 
+ act.CreatedTime, 
+ act.StatusId,
+ stt.Name
+ from Actions as ac
+ join ActionStatus as act on ac.Id =  act.ActionId
+ join Status as stt on stt.Id = act.StatusId
+ where ac.AccountId = 89 and ac.KPIId = 1243
+
+
+//query from SQLiteDB
+var _connect = _configuration.GetSection("Appsettings").GetSection("ConnectionStrings").Value;
+            using (IDbConnection db = new SQLiteConnection (_connect) )
+            {
+                var starts = start.ToString("yyyy-MM-dd HH:mm:ss:ffff");
+                var ends = end.ToString("yyyy-MM-dd HH:mm:ss:ffff");
+                //var starts = "2021-07-08 09:57:17.0380899";
+                //var ends = "2021-07-08 06:19:21.1037280";
+                string sqlQuery = @$"SELECT * FROM StirRawData Where CreatedTime >= '{starts}' AND CreatedTime <= '{ends}' AND MachineID = {machineID}";
+                try
+                {
+                    var data = (await db.QueryAsync<StirRawDataDto>(sqlQuery)).ToList();
+                    //var avg_rpm = Math.Round(data.Where(x => x.RPM < 1000).Select(y => y.RPM.ToInt()).Average(),0);
+                    //Console.WriteLine(avg_rpm);
+                    return data;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }

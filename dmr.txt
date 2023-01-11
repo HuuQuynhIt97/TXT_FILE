@@ -1,0 +1,82 @@
+Supplier Name: Han Young    Factory Name: Vietnam    Part No.: P-307-1S    Chemical Name: TU-307(A)    Batch/Lot No.: 2206060048    Production Date: 06.06.2022    Expiry Date: 06.12.2022    Capacity: 22    Unit: GRAM
+
+Supplier Name: NANPAO    Factory Name: Vietnam    Part No.: RVA575WA    Chemical Name: A575W    Batch/Lot No.: N/A    Production Date: N/A    Expiry Date: N/A    Capacity: 20    Unit: GRAM
+
+Supplier Name: GRECO    FActory NAme: VN    PArt No.: PL55    ChemicAl NAme: PL55    BAtch/Lot No: 2206060048    Production DAte: 06.06.2022    Expire DAte: 06.12.2022    CApAcity: 1    Unit: Kg    SeriAl number: -    RemArk:    TEL: +84-274-3790378    Website: http://www.nAnpAo.com    
+
+
+1. 5月份材料成本已於06/04繳交
+2. 月份費用分析表已於06/06繳交
+    (由於廠區伺服器連線問題, 無法於周  
+    日提交)
+
+
+本月起調整"PS180_A原物料月結後單價調整"的檢核作業流程,並與TSH/DHO釐清檢核要點，再向廠區營運中心/資材部解釋須配合事項
+
+
+SELECT TOP (1000) [Id]
+      ,[Target]
+      ,[Deadline]
+      ,[AccountId]
+      ,[KPIId]
+      ,[StatusId]
+      ,[Content]
+      ,[CreatedTime]
+      ,[ModifiedTime]
+  FROM [SHC_KPI].[dbo].[Actions] where AccountId = 67 and KPIId = 1114
+
+  select * from Do where ActionId IN(1093,1618)
+
+thang 1: 有13模是幫SPC開,3模是CB的，實際SHC客人付費比例高於85%
+thagn 1att: 69%
+
+thang5: 五月共開5模，其中3模是因為Treziod模具各尺寸只有1模，因有樣品急單，故廠內自行開了#6&#9共3塊，後續視訂單狀況跟客人請款
+
+thang5 att: 40%
+
+
+
+KPI1139
+T1: content:  1:每月10號前做好4M(人.机.料.法)分析 2:欠缺材料或异常停工时,即时将人员做派遣至人员欠缺组别或安排立即下班
+T1: result: ''
+T1: att: 100.20 
+
+T5: content:  	1:每月10號前做好4M(人.机.料.法)分析 2：每周三与部生管对材料进度状况，做好生产计划充足配套生产3：每两个小时跟主任对产量，发生问题马上处理.
+T5: result: 1. I1 5/27号生产ASMC EULAMPIS BOOT因鞋头片拉力不通过所以停线处理欠250双。
+2. I7，I9生产FORUMLOW 型体品质不稳定鞋头歪旁边大小欠650双产能。
+改善：
+1. 要求干部针对鞋头车中底对好点，入楦要正，画线注意旁边大小配好双，专家协助改善提升效率。
+2. 请化工组协助处理，改BPC流程胶从油性胶改用水性胶水。
+T5: att: 95.1 
+
+
+
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ID]
+      ,[ModelNameID]
+      ,[ModelNoID]
+      ,[ArticleNoID]
+      ,[ArtProcessID]
+      ,[ApprovalStatus]
+      ,[FinishedStatus]
+      ,[ApprovalBy]
+      ,[CreatedBy]
+      ,[Season]
+      ,[CreatedDate]
+      ,[ModifiedDate]
+      ,[UpdateTime]
+      ,[BuildingDate]
+      ,[DueDate]
+      ,[IsDelete]
+      ,[DeleteTime]
+      ,[DeleteBy]
+  FROM [shc-dmr-coreui1045174].[dbo].[BPFCEstablishes] WHERE ID = 2199
+
+  SELECT * FROM Glues WHERE BPFCEstablishID = 2199 
+  SELECT *	FROM GlueIngredient WHERE GlueID IN(SELECT Glues.ID FROM Glues WHERE GlueNameID = 444 )  AND GlueIngredient.IngredientID = 401
+  SELECT * FROM Ingredients WHERE NAME = 'VNP-CL-10AN'
+  SELECT * FROM GlueName WHERE ID = 444
+  SELECT * FROM GlueName WHERE NAME = 'A575W + 5%VNP-CL-10AN'
+  UPDATE GlueIngredient SET IngredientID = 371 WHERE GlueID IN(SELECT Glues.ID FROM Glues WHERE GlueNameID = 444 ) AND GlueIngredient.IngredientID = 401
+

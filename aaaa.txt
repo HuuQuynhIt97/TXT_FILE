@@ -1,0 +1,13 @@
+﻿/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT *  FROM [CB_KPI].[dbo].[Actions] where AccountId = 99
+SELECT *  FROM [CB_KPI].[dbo].TargetPIC where AccountId = 99
+SELECT *  FROM [CB_KPI].[dbo].Targets where CreatedBy = 99
+SELECT *  FROM [CB_KPI].[dbo].TargetYTD where CreatedBy = 99
+SELECT *  FROM [CB_KPI].[dbo].KPIAccount where AccountId = 99
+
+update Actions set AccountId = 99 where AccountId = 79 
+update TargetPIC set AccountId = 99 where AccountId = 79
+update Targets set CreatedBy = 99 where CreatedBy = 79
+update TargetYTD set CreatedBy = 99 where CreatedBy = 79
+
+select * from Accounts where Id in (64,79,99)
